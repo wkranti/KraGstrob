@@ -2,6 +2,7 @@
 layout : post
 excerpt : Avoid this common errors
 aside : true
+feature_image : "https://picsum.photos/200/300?image=579"
 ---
 
 ##  COMMON ERRORS :
