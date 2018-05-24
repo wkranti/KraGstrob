@@ -3,5 +3,5 @@ title: Team
 layout: page
 excerpt: ""
 aside: true
-image:  "/assets/img/team.jpg"
+image:  "https://picsum.photos/200/300/?random"
 ---
