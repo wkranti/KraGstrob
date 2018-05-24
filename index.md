@@ -2,7 +2,7 @@
 title:
 feature_text: |
        # About me .
-feature_image: "/assets/img/big.jpg"
+feature_image: "https://picsum.photos/1300/400?image=989"
 excerpt: ""
 tags: [about, Jekyll]
 date: 2018-05-20

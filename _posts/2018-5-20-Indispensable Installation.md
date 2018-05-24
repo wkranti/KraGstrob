@@ -17,6 +17,15 @@ Command >
 extras/check_dependencies.sh
 {% endhighlight %}
 
+{% highlight sh %}
+[“ kranti@kranti: ~/kaldi/tools
+
+kranti@kranti:~/kaldi/toolg$ extras/check_dependencies.sh
+extras/check_dependencies.sh: all OK.
+kranti@kranti:~/kaldi/t001$$ I
+
+{% endhighlight%}  
+
 Such message should be printed out.This script checks extra dependencies needed
 for kaldi.If your system default C++ compiler is not supported, you can do the
 check with another compiler by setting the CXX environment variable, e.g.

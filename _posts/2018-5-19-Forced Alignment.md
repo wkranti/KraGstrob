@@ -14,8 +14,17 @@ pip install --upgrade pip
 {% highlight shell %}
  bin/mfa_align .
  {% endhighlight %}
-![mfa_align]({{ "/assets/img/mfa_align.png" | site.baseurl }}){:class="img-responsive"}
 
+{% highlight sh %}
+kranti@kranti:~/Montreal-Forced-Aligner1$ bin/mfa_align
+usage: mfa_align [-h] [-s SPEAKER_CHARACTERS] [-t TEMP_DIRECTORY]
+                 [-j NUM_JOBS] [-v] [-n] [-c] [-d] [-e] [-i]
+                 corpus_directory dictionary_path acoustic_model_path
+                 output_directory
+mfa_align: error: the following arguments are required: corpus_directory, dictionary_path, acoustic_model_path, output_directory
+kranti@kranti:~/Montreal-Forced-Aligner1$
+
+{% endhighlight %}  
 Such usage information should be printed out.
 If not change directory and follow third step
 3)
@@ -26,9 +35,20 @@ Then Run
 {% highlight shell %}
 python3 kaldibinaries.py ~/kaldi/root
 {% endhighlight %}
-![py]({{ "/assets/img/py.png" | site.baseurl }}){:class="img-responsive"}
+
+{% highlight sh %}
+kranti@kranti:~/Montreal-Forced-Aligner1/thirdparty$ python3 kaldibinaies.py ~/kaldi/root
+
+{% endhighlight %}
 Now change directory to Montreal-Forced-Aligner and run following command.
-![mfa1]({{ "/assets/img/mfa1.png" | site.baseurl }}){:class:"img-responsive"}
+
+{% highlight sh %}
+kranti@kranti:~/Montreal-Forced-Aligner-master$ pip install -r requirements.txt
+Collecting https://github.com/pyinstaller/pyinstaller/archive/develop.zip (from -r requirements.txt (line 5))
+  Downloading https://github.com/pyinstaller/pyinstaller/archive/develop.zip
+     - 10kB 33kB/s^Z
+
+{% endhighlight %}  
 It would download all packages mentioned inside requirements.txt.
 Now run {% highlight shell %} freezing/freeze.sh{% endhighlight %} there will be
 folder created by the name dist change directory to that folder and further
@@ -72,8 +92,32 @@ My Home directory has :
   |                                  |                                                             |
   {: rules="groups"}                                                    
 
-![mfar]({{ "/assets/img/mfar.png" | site.baseurl }}){:class="img-responsive"}
 
+{% highlight sh %}
+kranti@kranti:~/Montreal-Forced-Aligner-master$ bin/mfa_train_and_align -t ~/output -v ~/MFATestWav ~/SpanishDict/Spanishdict.txt spanish
+Setting up corpus information...
+Creating dictionary information...
+Setting up training data...
+Calculating MFCCs...
+Calculating CMVN...
+Number of speakers in corpus: 1, average number of utterances per speaker: 1.0
+Beginning monophone training...
+  0%|                                                                       | 0/39 [00:00<?, ?it/s]log-likelihood -83.4514
+skipped transitions 140 183
+missing data gaussians 6
+  3%|█▌                                                             | 1/39 [00:00<00:13,  2.91it/s]log-likelihood -81.0823
+skipped transitions 140 183
+missing data gaussians 6
+  5%|███▏                                                           | 2/39 [00:00<00:11,  3.21it/s]log-likelihood -81.0169
+skipped transitions 140 183
+missing data gaussians 6
+  8%|████▊                                                          | 3/39 [00:00<00:10,  3.46it/s]log-likelihood -80.9504
+skipped transitions 140 183
+missing data gaussians 6
+ 10%|██████▍                                                        | 4/39 [00:01<00:09,  3.65it/s]log-likelihood -80.3842
+skipped transitions 140 183
+missing data gaussians 6
+{% endhighlight %}
 
 ### First Mono-Phone Training.
 
@@ -101,7 +145,37 @@ You can also use other command arguments such as
 {% highlight shell %}
 bin/mfa_align corpus_directory dictionary_path acoustic_model_path output_directory
 {% endhighlight %}
-![pret]({{ "/assets/img/pret.png" | site.baseurl }}){:class="img-responsive"}
+
+{% highlight sh %}
+kranti@kranti:~/Montreal-Forced-Aligner-masters bin/mfa_align -t ~/align -v ~/MFATestHav ~/Spanis
+hDict/Spd2.txt ~/SpanishModel/output.zip spanish
+
+Setting up corpus information...
+
+Number of speakers in corpus: 1, average number of utterances per speaker: 1.0
+
+Creating dictionary information...
+
+Setting up training data...
+
+Calculating MFCCs...
+
+Calculating CMVN...
+
+Number of speakers in corpus: 1, average number of utterances per speaker: 1.0
+
+Done with setup.
+There were words not found in the dictionary
+
+100%
+
+| 2/2 [oo:oo<oo:oo, 2.43it/s]
+Done! Everything took 5.192259311676025 seconds
+kranti@kranti:~/Montreal-Forced-Aligner-masters I
+
+Would ou like to abort to fix them? (Y N)n
+
+{% endhighlight %}
 
 output.zip contains output acoustic model using mfa_train_and_align .Similarly
 we can use pre-trained acoustic model.
@@ -113,8 +187,9 @@ Praat is used for Speech Analysis,Speech Synthesis,Speech Manipulation,Labelling
 and Segmentation,etc.
 Our purpose is related to analysis.Lets view output of textgrid.
 Run :
-![pout]({{ "/assets/img/pout.png" | site.baseurl }}){:class="img-responsive"}
+
+{% highlight sh %}
+kranti@kranti:~/Montreal-Forced-Aligner-master$ praat --open 1.TextGrid 1.wav
+{% endhighlight %}  
 
 Look you have to include 1.wav file in current directory.
-![sp]({{ "/assets/img/sp.png" | site.baseurl }}){:class="img-resonsive"}
-![ps]({{ "/assets/img/ps.png" | site.baseurl }}){:class="img-resonsive"}
