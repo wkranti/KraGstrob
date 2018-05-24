@@ -1,5 +1,5 @@
 ---
-title:
+title: About
 feature_text: |
        # About me .
 feature_image: "https://picsum.photos/1300/400?image=989"
@@ -12,7 +12,7 @@ aside : true
 
 
 
-## Affiliation
+
 * I am currently studying in  VNIT,Nagpur.
 * I spend most of my time as Developer in opensource community.
 * I am also incorporated in Google Summer of Code 2018.
