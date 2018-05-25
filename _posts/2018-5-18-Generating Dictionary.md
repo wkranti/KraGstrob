@@ -1,7 +1,7 @@
 ---
 layout : post
 excerpt : Dictionary Generating Process
-feature_image : "https://picsum.photos/200/300?image=564"
+feature_image : "https://picsum.photos/2560/600?image=564"
 ---
 
 ## Generating dictionary

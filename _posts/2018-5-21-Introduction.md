@@ -2,7 +2,7 @@
 layout : post
 title : Introduction
 excerpt : Introducing Myblog
-feature_image : "https://picsum.photos/200/300?image=391"
+feature_image : "https://picsum.photos/2560/600?image=391"
 ---
 
 

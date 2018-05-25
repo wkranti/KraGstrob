@@ -2,7 +2,7 @@
  layout : post
  title : Indispensable Installation
  excerpt : Get Started
- feature_image : "https://picsum.photos/200/300?image=515"
+ feature_image : "https://picsum.photos/2560/600?image=515"
 ---
 
 This blog is about running pre-trained Spanish model using Montreal Force

@@ -1,7 +1,7 @@
 ---
 layout : post
 excerpt : The Alignment Process
-feature_image : "https://picsum.photos/200/300?image=547"
+feature_image : "https://picsum.photos/2560/600?image=547"
 ---
 Lets see next process ,download latest Montreal Force Aligner source code from
 Link :- [Montreal Forced Aligner](https://github.com/MontrealCorpusTools/Montreal-Forced-Aligner.git)
