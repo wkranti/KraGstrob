@@ -31,9 +31,9 @@ in your gist.You just have to include something like This
 
    The number  c403eaac31a4cf8dacda49adfdc43910 is gist Id.
 
-   ###How do we create gist?
+### How do we create gist?
     * You must have Github account to create gist.
-    * Navigate to ![gist homepage](https://gist.github.com/).
+    * Navigate to [gist homepage](https://gist.github.com/).
     * Type name and description of your pages.
     * You have two options here Create public Gist and Secret Gist.
     * If you want to include images in gist , look below after you make
@@ -43,7 +43,7 @@ in your gist.You just have to include something like This
   Gist also support GeoJSON files.These maps are displayed in embedded gists,
   so you can easily share and embed maps.
 
-  ###Mapping GeoJSON files on Github.
+### Mapping GeoJSON files on Github.
   GitHub supports rendering geoJSON and topoJSON map files within GitHub
   repositories. Simply commit the file as you would normally using a .geojson
   or .topojson extension. Files with a .json extension are also supported, but
@@ -53,7 +53,9 @@ in your gist.You just have to include something like This
   When you click the paper icon on the right, you'll also see the changes made
   to that file as part of a commit.
 
-  ###Resources
-  More information about gist can be found ![here](https://help.github.com/articles/about-gists/)
-  More information about creating gist can be found ![here](https://help.github.com/articles/creating-gists/)
-  More information about forking gist can be found![here](https://help.github.com/articles/forking-and-cloning-gists/)
+### Resources
+  More information about gist can be found [here](https://help.github.com/articles/about-gists/)
+
+  More information about creating gist can be found [here](https://help.github.com/articles/creating-gists/)
+
+  More information about forking gist can be found[here](https://help.github.com/articles/forking-and-cloning-gists/)
