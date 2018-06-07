@@ -194,3 +194,4 @@ kranti@kranti:~/Montreal-Forced-Aligner-master$ praat --open 1.TextGrid 1.wav
 {% endhighlight %}  
 
 Look you have to include 1.wav file in current directory.
+![TextGrid Output](https://gist.github.com/wkranti/c403eaac31a4cf8dacda49adfdc43910.js)
