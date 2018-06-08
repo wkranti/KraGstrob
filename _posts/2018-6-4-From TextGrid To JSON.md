@@ -86,6 +86,9 @@ In this post we would concentrate on creating JSON output from TextGrid.
              main(sys.argv[1:])
 
   {% endhighlight %}  
+
+  {% gist wkranti/e8a9cc00955b8e7bd29cf07ed9ecae77 %}
+
 * Name the above file parser.py .Open terminal and Type
     {% highlight shell %}
          python3 parser.py -i textgrid2csv.csv -o output.json
