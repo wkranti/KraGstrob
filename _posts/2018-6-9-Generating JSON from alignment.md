@@ -117,18 +117,18 @@ There are two process mentioned here
 
 5) Now it is time to download Spanish model using the shell script.
 
-   {% highlight shell %}
+     {% highlight shell %}
 
       kranti@kranti:~/Desktop/Newrepo$ ./install_models.sh
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
     100 14.0M  100 14.0M    0     0  40463      0  0:06:02  0:06:02 --:--:-- 60683
+    {% endhighlight %}
 
-   {% endhighlight %}
 
 
-    If above script doesn't work use this [site](http://montreal-forced-aligner.readthedocs.io/en/latest/pretrained_models.html)
-    to download the model. Put this file as spanish.zip in Models folder.
+If above script doesn't work use this [site](http://montreal-forced-aligner.readthedocs.io/en/latest/pretrained_models.html)
+to download the model. Put this file as spanish.zip in Models folder.
 
 {% gist 14a21008528f5471ee716c07f2399518 %}
 
