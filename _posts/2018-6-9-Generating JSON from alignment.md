@@ -143,9 +143,9 @@ to download the model. Put this file as spanish.zip in Models folder.
 
 {% gist 14a21008528f5471ee716c07f2399518 %}
 
-    If you complete this five steps successfully then no need to follow from 6th
-    step.Go directly to 9th step.
-    Now only option if this(Above five steps) doesn't work is building from source  
+If you complete this five steps successfully then no need to follow from 6th
+step.Go directly to 9th step.
+Now only option if this(Above five steps) doesn't work is building from source  
 
 ### Building from source (7-8th step)
 
