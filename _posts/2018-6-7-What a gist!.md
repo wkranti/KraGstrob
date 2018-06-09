@@ -10,23 +10,23 @@ in it.
 If you are hosting gh-pages with jekyll , It is useful and easy to embed images
 and code snippets so you do not have to insert code in markdown itself
 adding this line is enough to direct users to your code-snippets and images
-in your gist.You just have to include something like This
+in your gist.You just have to include something like this
 
-    {% highlight text %}
-      {% gist  c403eaac31a4cf8dacda49adfdc43910  %}
+    {% highlight md %}
+      {% gist  c403f8dacda49adfdc43910  %}
     {% endhighlight %}
 
      OR
 
     {% highlight text %}
-      {% gist  wkranti/c403eaac31a4cf8dacda49adfdc43910  %}
+      {% gist  wkranti/c403f8dacda49adfdc43910  %}
     {% endhighlight %}
 
   wkranti is my username ,paste your username and the gist Id of your desired
   gist.URL of the gist look something like this
 
      {% highlight text %}
-       <script src="https://gist.github.com/wkranti/c403eaac31a4cf8dacda49adfdc43910.js"></script>
+       <script src="https://gist.github.com/wkranti/c403f8dacda49adfdc43910.js"></script>
      {% endhighlight %}
 
    The number  c403eaac31a4cf8dacda49adfdc43910 is gist Id.

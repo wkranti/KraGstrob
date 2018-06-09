@@ -74,7 +74,7 @@ There are two process mentioned here
    │   └── thirdparty
    │       └── bin
    └── pretrained_models
-  {% endhightlight %}
+  {% endhighlight %}
 
    change the name of montreal-forced-aligner to MFA it should look like this.
 
