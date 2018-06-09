@@ -161,10 +161,11 @@ to download the model. Put this file as spanish.zip in Models folder.
             cd /path/to/Montreal-Forced-Aligner/thirdparty.
        {% endhighlight %}
 
-    b) Run the
-       {% highlight shell %}
-       thirdparty/kaldibinaries.py script, pointing it to where Kaldi
-       was built (python thirdparty/kaldibinaries.py /path/to/kaldi/root).
+    b) Run the thirdparty/kaldibinaries.py script, pointing it to where Kaldi
+       was built
+
+      {% highlight shell %}
+       python thirdparty/kaldibinaries.py /path/to/kaldi/root
       {% endhighlight %}
 
     c) Run
@@ -174,8 +175,14 @@ to download the model. Put this file as spanish.zip in Models folder.
          {% endhighlight %}
 
        to install the requirements for the aligner.
-    d) Run the build script via freezing/freeze.sh. There will now be a
-       montreal-forced-aligner folder in the dist folder. This folder should
+
+    d) Run the build script via
+
+       {% highlight shell %}
+        freezing/freeze.sh
+       {% endhighlight %}
+
+      There will now be a montreal-forced-aligner folder in the dist folder. This folder should
        contain a bin folder with the two executables mfa_align and
        mfa_train_and_align that should be used for alignment.  
 
