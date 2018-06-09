@@ -16,11 +16,11 @@ This repository will be named Newrepo-master.I have used the name Newrepo in thi
 post in place of Newrepo-master . Newrepo-master or Newrepo means the same.  
 This repository include
 * MFATestWav - An empty directory used in alignment process.
+* Models - Directory used to download acoustic model.
 * output - Folder Used to store output from Alignment Process.
 * outputcsv - Folder Used to store CSV output from TextGrid.
 * outputjson - Folder Used to store the final JSON output from the alignment
               process.
-* Models - Directory used to download acoustic model
 * testfiles - Folder contains sample audio and transcript file for alignment.
 * align.py  - Alignment script .
 * textgrid2csv.py - Python script used to derive csv from textgrid.
@@ -31,19 +31,20 @@ This repository include
 Please make sure directories are named similar to what I have given above
 and the directories MFATestWav , Models ,output , outputcsv , outputjson are empty
 before aligning , it has .gitignore files in all these directory , delete
-this .gitignore files . I have only added them in this directory , because
+this .gitignore files . I have only added them in this directory  because
 we can't upload empty directory in git repository, it won't be tracked.
 
 So let's start with the process,after you forked the repository
 you will see you have above mentioned folder, please make sure you have all
 the necessary folder in repository.
+
 Further your system should have python version greater than 3.x.
 Some script mentioned does not support version less than 3.x.
 
 Below given process are needed for checking requirements and fetching models.
 There are two process mentioned here
-###### Download Linux release mentioned in step 2.(Recommended)
-###### Building from source mentioned in step 6.
+###### 1) Download Linux release mentioned in step 2.(Recommended)
+###### 2) Building from source mentioned in step 6.
 
 ### Using Linux Release.
 
@@ -63,7 +64,7 @@ There are two process mentioned here
   {% endhighlight %}
 
    If you are using linux then click the montreal-forced-aligner_linux.tar.gz
-    When you unzip this files one folder by the name montreal-forced-aligner
+    .When you unzip this files one folder by the name montreal-forced-aligner
    will be created . Directory should look like this.
 
 
@@ -94,6 +95,12 @@ There are two process mentioned here
    It should look like this
 
    {% gist wkranti/f2e8d7d784752dfd84afddf59474064a %}
+
+
+   If you want to view detailed file view in directory then view this
+
+   {% gist wkranti/d757abf75edb052c8f2ea5a28557834f %}
+
 
 4) After doing above process check this command.Change directory to Newrepo/MFA
    and then check the command
