@@ -195,7 +195,11 @@ to download the model. Put this file as spanish.zip in Models folder.
 
 {% gist wkranti/b3dc9949b751ccfbb6cddf847b230eb3 %}
 
+
+
        Result can be viewed in above gist.
+
+
 JSON output can be viewed in outputjson.CSV output can be viewed in outpucsv.
 Usually I recommend using Linux release(This is method I followed) . We do not
 need to compile any binaries in this we have to use as it is given montreal-
@@ -236,7 +240,7 @@ do keep this few things in mind before testing files
 * Dictionary can be made using g2p models . information on this is mentioned
   in my this [post](https://wkranti.github.io/kragstrob/2018/05/18/Generating-Dictionary/)
 
-* I also tried to clone my repository Newrepo from github in order to check if is
-  working .Here you can view alignment results.
+* I also tried to clone my repository Newrepo from github in order to check if it
+  works .Here you can view alignment results.
 
 {% gist wkranti/26f97153949e91f599e9e3f4f330841d %}
