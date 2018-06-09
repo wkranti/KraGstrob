@@ -165,11 +165,13 @@ to download the model. Put this file as spanish.zip in Models folder.
        mfa_train_and_align that should be used for alignment.  
 
       After doing this do the 5th step and then 9th step.   
-  8) More information on installation is mentioned on this
-     [site](http://montreal-forced-aligner.readthedocs.io/en/latest/installation.html)
 
-     I have also made blog post on 
-     [this](https://wkranti.github.io/kragstrob/2018/05/19/Forced-Alignment/)
+
+8) More information on installation is mentioned on this
+   [site](http://montreal-forced-aligner.readthedocs.io/en/latest/installation.html)
+
+   I have also made blog post on
+   [this](https://wkranti.github.io/kragstrob/2018/05/19/Forced-Alignment/)
 
 ##### NOTE
        Models should not be unzipped.It is downloaded as spanish.zip and keep
