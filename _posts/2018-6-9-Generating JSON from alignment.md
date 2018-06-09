@@ -145,14 +145,17 @@ to download the model. Put this file as spanish.zip in Models folder.
  7) After doing 1st step and 6th step follow this steps.
 
     a) Open a terminal and go to the unzipped folder
+
        {% highlight shell %}
-       cd /path/to/Montreal-Forced-Aligner/thirdparty.
+            cd /path/to/Montreal-Forced-Aligner/thirdparty.
        {% endhighlight %}
+
     b) Run the  thirdparty/kaldibinaries.py script, pointing it to where Kaldi
        was built (python thirdparty/kaldibinaries.py /path/to/kaldi/root).
     c) Run
+
          {% highlight shell %}
-        pip install -r requirements.txt
+               pip install -r requirements.txt
          {% endhighlight %}
 
        to install the requirements for the aligner.
@@ -161,10 +164,12 @@ to download the model. Put this file as spanish.zip in Models folder.
        contain a bin folder with the two executables mfa_align and
        mfa_train_and_align that should be used for alignment.  
 
+      After doing this do the 5th step and then 9th step.   
   8) More information on installation is mentioned on this
      [site](http://montreal-forced-aligner.readthedocs.io/en/latest/installation.html)
 
-     I have also made blog post on [this](https://wkranti.github.io/kragstrob/2018/05/19/Forced-Alignment/)
+     I have also made blog post on 
+     [this](https://wkranti.github.io/kragstrob/2018/05/19/Forced-Alignment/)
 
 ##### NOTE
        Models should not be unzipped.It is downloaded as spanish.zip and keep
@@ -179,8 +184,8 @@ to download the model. Put this file as spanish.zip in Models folder.
 
        Result can be viewed in above gist.
 
-Usually I recommend using Linux release , as when building from source
-would let you to error such as 'fstcompile' not found this file is included in
+Usually I recommend using Linux release(This is method I followed) , as when
+ building from source would lead you to error such as 'fstcompile' not found this file is included in
 Linux Release .And some errors are included in
 [common errors post](https://wkranti.github.io/kragstrob/2018/05/18/Common-Errors/)
 
@@ -192,10 +197,8 @@ do keep this few things in mind before testing files
 * You can convert the sampling rate like this
 
   {% highlight shell %}
-
       ffmpeg -i a.wav -ar 16000 b.wav
-
-  {% endhighlight%}  
+  {% endhighlight %}  
 
    where a.wav is you sample file for changing sampling rate and b.wav is resultant
    file we want for alignment purpose.
@@ -213,6 +216,6 @@ do keep this few things in mind before testing files
 * You can do alignment in any language you just have to modify scripts in
   install_models.sh to download desired models.You would also need dictionary
   for that language and should be in GlobalPhone format.
-  Make changes accordingly in align.py to direct it to the model you have doenloaded.
+  Make changes accordingly in align.py to direct it to the model you have downloaded.
 * Dictionary can be made using g2p models . information on that is mentioned
   in my this [post](https://wkranti.github.io/kragstrob/2018/05/18/Generating-Dictionary/)
