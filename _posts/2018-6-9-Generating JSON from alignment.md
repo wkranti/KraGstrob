@@ -7,7 +7,7 @@
 
 So this is the end of GSOC 2018 third week ,Next week there is evaluation.
 These three weeks has been great ,I got so many things to learn from my mentor
-Robert Oshshorn.
+Robert Ochshorn.
 
 Here in this post we  will learn about creating JSON file from the alignment
 process ,In this process we will use the repository that I made you can clone
