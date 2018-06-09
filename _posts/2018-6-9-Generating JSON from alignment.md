@@ -5,6 +5,10 @@
  feature_image : "https://picsum.photos/2560/600?image=1044"
 ---
 
+So this is the end of GSOC 2018 third week ,Next week there is evaluation.
+These three weeks has been great ,I got so many things to learn from my mentor
+Robert Oshshorn.
+
 Here in this post we  will learn about creating JSON file from the alignment
 process ,In this process we will use the repository that I made you can clone
 it [here](https://github.com/wkranti/Newrepo)
@@ -195,7 +199,7 @@ to download the model. Put this file as spanish.zip in Models folder.
 
 Usually I recommend using Linux release(This is method I followed) . We do not
 need to compile any binaries in this we have to use as it is given montreal-
-forced-aligner_linux.tar.gz .But when building from source would lead you to
+forced-aligner_linux.tar.gz .But when building from source ,it would lead you to
 error such as 'fstcompile' not found .This file is included in Linux Release
 any many other files you may have to include in the source file as you face any errors.
 And some errors are included in
