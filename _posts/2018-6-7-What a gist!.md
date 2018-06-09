@@ -33,7 +33,8 @@ in your gist.You just have to include something like this
 
 ### How do we create gist?
     * You must have Github account to create gist.
-    * Navigate to [gist](https://gist.github.com/)
+    * Navigate to
+  [gist](https://gist.github.com/)
     * Type name and description of your pages.
     * You have two options here Create public Gist and Secret Gist.
     * If you want to include images in gist , look below after you make

@@ -161,8 +161,12 @@ to download the model. Put this file as spanish.zip in Models folder.
             cd /path/to/Montreal-Forced-Aligner/thirdparty.
        {% endhighlight %}
 
-    b) Run the  thirdparty/kaldibinaries.py script, pointing it to where Kaldi
+    b) Run the
+       {% highlight shell %}
+       thirdparty/kaldibinaries.py script, pointing it to where Kaldi
        was built (python thirdparty/kaldibinaries.py /path/to/kaldi/root).
+      {% endhighlight %}
+
     c) Run
 
          {% highlight shell %}
@@ -200,7 +204,7 @@ to download the model. Put this file as spanish.zip in Models folder.
        Result can be viewed in above gist.
 
 
-JSON output can be viewed in outputjson.CSV output can be viewed in outpucsv.
+JSON output can be viewed in outputjson.CSV output can be viewed in outputcsv.
 Usually I recommend using Linux release(This is method I followed) . We do not
 need to compile any binaries in this we have to use as it is given montreal-
 forced-aligner_linux.tar.gz .But when building from source ,it would lead you to
