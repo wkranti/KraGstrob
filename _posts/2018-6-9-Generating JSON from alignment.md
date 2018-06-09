@@ -68,8 +68,8 @@ There are two process mentioned here
   {% endhighlight %}
 
    If you are using linux then click the montreal-forced-aligner_linux.tar.gz
-    .When you unzip this files one folder by the name montreal-forced-aligner
-   will be created . Directory should look like this.
+    .When you unzip this files , one folder by the name montreal-forced-aligner
+   will be created .This directory should look like below.
 
 
   {% highlight shell %}
@@ -199,7 +199,9 @@ Now only option if this(Above five steps) doesn't work is building from source
        Models should not be unzipped.It is downloaded as spanish.zip and keep
        is as it is in Models folder.Names are case sensititve.
 
-  9) Now is the time to do alignment
+  9) Now is the time to do alignment,Navigate to Newrepo(Newrepo-master) and
+     type this in terminal.
+
       {% highlight shell %}
                   python3 align.py testfiles/64.wav testfiles/64.lab
       {% endhighlight %}   
