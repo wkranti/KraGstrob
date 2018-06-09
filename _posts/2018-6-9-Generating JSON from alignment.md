@@ -54,12 +54,13 @@ There are two process mentioned here
   You will see following options when you visit this website
 
   {% highlight shell %}
-   montreal-forced-aligner_linux.tar.gz  93 MB
-   montreal-forced-aligner_macosx.zip    45 MB
-   montreal-forced-aligner_win64.zip     43.5MB
-   Source code (zip)
-   Source code (tar.gz)
-   {% endhighlight %}
+      montreal-forced-aligner_linux.tar.gz  93 MB
+      montreal-forced-aligner_macosx.zip    45 MB
+      montreal-forced-aligner_win64.zip     43.5MB
+      Source code (zip)
+      Source code (tar.gz)
+
+  {% endhighlight %}
 
    If you are using linux then click the montreal-forced-aligner_linux.tar.gz
     When you unzip this files one folder by the name montreal-forced-aligner
@@ -100,11 +101,7 @@ There are two process mentioned here
     {% highlight shell %}
       kranti@kranti:~/Desktop/Newrepo$ cd MFA     
       kranti@kranti:~/Desktop/Newrepo/MFA$ bin/mfa_align
-    {% endhighlight %}  
-
-    {% highlight shell %}
-
-        kranti@kranti:~/Desktop/Newrepo/MFA$ bin/mfa_align
+      kranti@kranti:~/Desktop/Newrepo/MFA$ bin/mfa_align
         usage: mfa_align [-h] [-s SPEAKER_CHARACTERS] [-t TEMP_DIRECTORY]
                             [-j NUM_JOBS] [-v] [-n] [-c] [-d] [-e] [-i]
                            corpus_directory dictionary_path acoustic_model_path
@@ -112,8 +109,8 @@ There are two process mentioned here
         mfa_align: error: the following arguments are required: corpus_directory
         , dictionary_path, acoustic_model_path, output_directory
 
-
     {% endhighlight %}  
+
 
      If this usage message is not printed then there is problem in your installation
      process. Follow from the 6th step.
@@ -127,10 +124,11 @@ There are two process mentioned here
                                      Dload  Upload   Total   Spent    Left  Speed
     100 14.0M  100 14.0M    0     0  40463      0  0:06:02  0:06:02 --:--:-- 60683
 
-
    {% endhighlight %}
 
-    {% gist wkranti/14a21008528f5471ee716c07f2399518 %}
+
+{% gist wkranti/14a21008528f5471ee716c07f2399518 %}
+
 
     If above script doesn't work use this [site](http://montreal-forced-aligner.readthedocs.io/en/latest/pretrained_models.html)
     to download the model. Put this file as spanish.zip in Models folder.
@@ -177,7 +175,7 @@ There are two process mentioned here
                   python3 align.py testfiles/64.wav testfiles/64.lab
       {% endhighlight %}   
 
-       {% gist wkranti/b3dc9949b751ccfbb6cddf847b230eb3 %}
+{% gist wkranti/b3dc9949b751ccfbb6cddf847b230eb3 %}
 
        Result can be viewed in above gist.
 
