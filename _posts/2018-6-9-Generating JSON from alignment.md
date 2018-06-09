@@ -193,9 +193,12 @@ to download the model. Put this file as spanish.zip in Models folder.
 
        Result can be viewed in above gist.
 
-Usually I recommend using Linux release(This is method I followed) , as when
- building from source would lead you to error such as 'fstcompile' not found this file is included in
-Linux Release .And some errors are included in
+Usually I recommend using Linux release(This is method I followed) . We do not
+need to compile any binaries in this we have to use as it is given montreal-
+forced-aligner_linux.tar.gz .But when building from source would lead you to
+error such as 'fstcompile' not found .This file is included in Linux Release
+any many other files you may have to include in the source file as you face any errors.
+And some errors are included in
 [common errors post](https://wkranti.github.io/kragstrob/2018/05/18/Common-Errors/)
 
 The alignment process used here is for alignment of Spanish data.
