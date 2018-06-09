@@ -86,7 +86,7 @@ There are two process mentioned here
     │   └── thirdparty
     │       └── bin
     └── pretrained_models
-   {% endhightlight %}
+   {% endhighlight %}
 
 3) Now, after renaming add this(MFA folder) to the Newrepo(repository cloned from github)
 
