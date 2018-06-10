@@ -111,7 +111,7 @@ There are two process mentioned here
 
     {% highlight shell %}
       kranti@kranti:~/Desktop/Newrepo$ cd MFA     
-      kranti@kranti:~/Desktop/Newrepo/MFA$ bin/mfa_align
+      
       kranti@kranti:~/Desktop/Newrepo/MFA$ bin/mfa_align
         usage: mfa_align [-h] [-s SPEAKER_CHARACTERS] [-t TEMP_DIRECTORY]
                             [-j NUM_JOBS] [-v] [-n] [-c] [-d] [-e] [-i]
