@@ -6,7 +6,14 @@ feature_image : "https://picsum.photos/2560/600?image=983"
 ---
 
 In this post we will learn about frequently used method to include Submodules
-in github repository.
+in github repository.Before learning submodules  you should know the dependency
+management.
+
+##### What is dependency management ?
+While making API if it depends upon several other modules it is necessary to include
+them in one in order to ensure proper functioning of API.This is especially done
+when  bigger project are involved and all dependency should be kept on one level.
+Dependency tool is available for dependency management.
 
 ##### What are submodules ?
 A submodule in a git repository is like a sub-directory which is really a
@@ -23,7 +30,7 @@ Here are some languages and thier dependency management ;
 
 And many more examples can be found.
 
-You should have proper version of git.
+You should have proper version of git.It is important to have proper git version.
 When you add a submodule in Git, you don't add the code of the submodule to the
 main repository, you only add information about the submodule that is added to
 the main repository. This information describes which commit the submodule is
@@ -49,7 +56,37 @@ not work with the latest commit of the submodule, it prevents unexpected behavio
 
  {% endhighlight %}
 
+submodule add command adds new .gitmodule file and the repository which is
+included as submodule.Then to commit changes in repository
+
+{% highlight shell %}
+
+  git commit -m "Adding submodule"
+
+{% endhighlight %}  
+
+##### Submodules or Subtree ,Confuse ?
+
+Many of us may have confusion regarding submodule and subtree.
+we have seen submodule above now we will see how to make subtree.
+
+{% highlight shell %}
+
+git subtree add --prefix=submodule-name <link-to-submodule> master --squash
+
+{% endhighlight %}  
+
+you can consider subtree as copy or integrating another repository into your
+own repository. The subtree command adds the the submodule-name to your
+own repository. Usually this approach is not used as it takes more space in your
+repository .Consequently ,using submodule creates link to the repository which
+user may or may not use it depends on user whether to use submodule or just
+use the source code in repository(If the submodule is optional).   
+
 ##### How submodules are represented ?
+
+This below information I found useful on Mark's blog.So I thought it might be
+useful for others.More information can be found on his [blog]( https://longair.net/blog/2010/06/02/git-submodules-explained/)
 
 {% highlight shell %}
 $ git ls-tree HEAD^{tree}
@@ -65,28 +102,37 @@ $ git ls-tree HEAD^{tree}
 
 {% endhighlight %}  
 
-The objects can be of various types, such as “commit”, “tag”, “blob” (file),
- “tree” (directory), etc.  Each commit object points to a tree object which
- represents the state of your source code at that commit
+Various file object such as
+ blob ->  Indicates File.
+ tree ->  Subdirectory.
+ commit -> Indicates Submodule
+ 1e38e022c1c7d27f6dd9b765793087b59d147ef8 -> SHA1 hash
 
 ##### How to see status of submodules ?
 
-Running git submodule without arguments defaults to running git submodule status,
-which produces a helpful summary of the status of all your submodules.Each line
-begins with a space, a ‘+’ or a ‘-‘ which indicate the following things:
+To view status of submodule we use just git submodule without any arguments.
+{% highlight shell %}
+
+git submodule status --recursive
+
+{% endhighlight %}
+
+If --recursive is specified, this command will recurse into nested submodules,
+and show their status as well.If your repository has multiple embeded submodules.
+
+You can see each SHA-1 hash begins with a space, a ‘+’ or a ‘-‘ which indicate the
+following things:
 
  \+   The version checked out in the submodule is different from that specified
      in the super-project. The object name shown is that of the commit that
      the submodule is currently at.
 
-–    The submodule hasn’t been initialized or there’s no repository at the
-     submodule path (e.g. if you’ve run  git submodule init but not git
-     submodule update, or you’ve later deleted the submodule directory from
-     the working tree). The object name shown is the commit that’s specified
-     in the super-project.
+–    The submodule hasn’t been initialized or you may not have committed the
+     changes in github repository.
 
-[space]  The submodule’s HEAD is at the correct version – the object name shown
-         is that version.
+U   This option indicates if the given module has merge conflicts.
+
+[space]  The submodule’s HEAD is at the correct version .
 
 {% highlight shell %}
 90287f0250542be256f67ade4e29a618bf6e688f TrakEM2 (0.7m-227-g90287f0)
@@ -98,3 +144,18 @@ e4d3eb47a8f9d4e62d1f356636652c3ecc739d92 batik (remotes/origin/svn/git-svn@21606
 {% endhighlight %}  
 
 More can be learnt regarding submodules.
+
+#### Downside of using submodule
+One of the advantage that dependency manager such as Apache ivy has transitive
+dependency resolution.It downloads already compiled packages.
+straight from Apache ivy pages
+   With Apache Ivy, it's different: simply write a dependency file once for
+   the component, and benefit from the work already done anytime this
+   component is reuse.
+#### Resources
+
+   [Git](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
+
+   [Heroku Dev center](https://devcenter.heroku.com/articles/git-submodules)
+
+   [Atlassian blog](https://www.atlassian.com/blog/git/git-project-dependencies)

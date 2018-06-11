@@ -61,7 +61,8 @@ Let's create concept map of how decoding works...
 
  * While compiling this file I face the error saying no matching function for
    call.You can view it in gist . Pointer is towards adaptation_state so ,
-   I thought probably there must not be any parameter like "adaptation_state"
+   I thought probably there must not be any parameter like "adaptation_state",
+   I thought problems must be in this lines.
    But what I saw in online2-wav-gmm-latgen-faster.cc on kaldi website ,they
    have declared the same variable "adaptation_state" in SingleUtteranceGmmDecoder.
    No idea what should be done here.(Line 127 - 130)
