@@ -51,11 +51,11 @@ Let's create concept map of how decoding works...
      parameter mentioned in kaldi files.
       Example parameter such as ;
 
-               beam =
+               beam,
 
                lattice-beam = (this affects speed of lattice extraction)
 
-               max-active-state =  (act as threshold for worst case scenario)       
+               , max-active-state =  (act as threshold for worst case scenario)       
 
 ###### Problems Faced
 

@@ -97,4 +97,4 @@ e4d3eb47a8f9d4e62d1f356636652c3ecc739d92 batik (remotes/origin/svn/git-svn@21606
 -4f3964234f4e6fd78247e5e7fad9c8becad53e8f java/macosx-java3d
 {% endhighlight %}  
 
-More can be learnt
+More can be learnt regarding submodules.
