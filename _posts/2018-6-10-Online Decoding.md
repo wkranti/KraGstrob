@@ -50,8 +50,11 @@ Let's create concept map of how decoding works...
   * Decoding parameter should be set before decoding ,I have used the same
      parameter mentioned in kaldi files.
       Example parameter such as ;
+
                beam =
+
                lattice-beam = (this affects speed of lattice extraction)
+
                max-active-state =  (act as threshold for worst case scenario)       
 
 ###### Problems Faced
